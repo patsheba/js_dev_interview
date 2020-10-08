@@ -1,4 +1,4 @@
-function flatten(flattenArray) {
+function flattenTest(flattenArray) {
   const arrayStack = [...flattenArray];
   //define empty array to store output
   const response = [];
@@ -17,5 +17,5 @@ function flatten(flattenArray) {
   return response.reverse();
 }
 const testArray = [1,2,[3,4,[5,6],7,[8,9]]];
-const flattenedArray = flatten(testArray);
+const flattenedArray = flattenTest(testArray);
 console.log(flattenedArray)
